@@ -14,14 +14,63 @@
     <body>
         <div class="container">
             <div>
-                <img src="assests\images\logo.png" height="100px" width="150px" alt="logo">
+               <a href="index.html"><img src="assests\images\logo.png" height="100px" width="150px" alt="logo"></a>
                 <a href="login.html" target="_blank">Login</a>
             </div>
             <div>
                 <div>
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="img-fluid">
                 </div>
-                <a href="payment.html">Book now</a>
+                <br>
+                <!--this form div-->
+                <div>
+                    <form action="payment.html" method="get">
+                        <div class="row mb-2 align-items-center" >
+                            <div class="col-auto" >
+                              <label for="inputadult" class="col-form-label">Adults:</label>
+                            </div>
+                            <div class="col-auto">
+                              <input type="number" min="1" id="inputadult" class="form-control" value="1" name="adult" >
+                            </div>
+                            
+                        </div>
+                        <div class="row mb-2 align-items-center" >
+                            <div class="col-auto" >
+                              <label for="inputname" class="col-form-label">Name:</label>
+                            </div>
+                            <div class="col-auto">
+                              <input type="text" id="inputname" class="form-control" required placeholder="Enter your name" name="name" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="row mb-2 align-items-center" >
+                            <div class="col-auto" >
+                              <label for="inputdate" class="col-form-label">From Date:</label>
+                            </div>
+                            <div class="col-auto">
+                              <input type="date" id="inputdate" class="form-control" required name="fromdate">
+                            </div>
+                        </div>
+                        <div class="row mb-2 align-items-center" >
+                            <div class="col-auto" >
+                              <label for="inputtodate" class="col-form-label">To Date:</label>
+                            </div>
+                            <div class="col-auto">
+                              <input type="date" id="inputtodate" class="form-control" required name="todate">
+                            </div>
+                        </div>
+                        <div class="row mb-2 align-items-center" >
+                            <div class="col-auto" >
+                              <label for="inputtotal" class="col-form-label">Total</label>
+                            </div>
+                            <div class="col-auto">
+                              <input type="text" id="inputtotal" class="form-control" readonly name="price">
+                            </div> 
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Book Now</button>
+                    </form>
+                </div>
+
+            <div>
                 <h2>Radisson Blu Hotel</h2>
                 <p>RATING</p>
                 <p>5 Star</p>
@@ -36,6 +85,7 @@
                 <h6>DESCRIPTION</h6>
                 <p>Hi Welcome to the hotel website</p>
             </div>
+            
             <div>
                 <a href="contact.html" target="_blank">Contact US</a><br>
                 <a href="https://www.facebook.com/" target="_blank"><img src="assests\images\facebook.png" class="img-fluid socialmedia"></a>

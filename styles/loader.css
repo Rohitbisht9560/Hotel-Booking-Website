@@ -1,5 +1,23 @@
-.container
+*
 {
     margin: 0px;
     padding: 0px;
+}
+.container-fluid
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.loader
+{
+    position: relative;
+    width: 70px;
+    height: 70px;  
+    border-radius: 50%;
+    border: 12px solid #f3f3f3;
+    border-top:12px solid  #444444;
 }

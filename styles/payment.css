@@ -17,8 +17,9 @@ body
 {
     width: 100%;
     height: 100%;
+    background-color:#e0e0e0;
 }
-.container
+.container-fluid
 {
     margin: 0px;
     padding: 0px;
@@ -29,4 +30,28 @@ body
 {
     height:60px;
     width:60px;
+}
+header
+{
+    background-color:rosybrown;
+    width: 100%;
+}
+footer
+{
+    background-color:rosybrown;
+    width: 100%;
+}
+.innercontent{
+    position: relative;
+    width: 50%;
+    height: 20%;
+    background-color: rgb(132,136,139);
+    margin: 2% auto 2% auto;
+}
+.tarrif
+{
+    margin: 2%;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 1% 2%;   
 }

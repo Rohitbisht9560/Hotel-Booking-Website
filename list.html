@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="styles\common.css">
         <link rel="stylesheet" href="styles\list.css">
     </head>
     <body>
@@ -19,21 +19,20 @@
             </header>
             <div>
                 <!--this is option for list view and map view-->
-                <div>
+                <div class="view">
                     <ul>
                         <li><a href="#hotellist">List View</a></li>
                         <li><a href="#mapview">Map View</a></li>
-
                     </ul>
                 </div>
+                <div class=htl>
                 <!--hotel list div-->
                 <div class="hotellist">
                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="img-fluid">
                     <a href="detail.html">
                     <h3>Radison Blu Hotel</h3>
                      <p>5 Star</p>
-                     <p>New Delhi</p>
-                    </a>
+                     <p>New Delhi</p></a>
                 </div>
                 <div class="hotellist">
                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" class="img-fluid">
@@ -47,19 +46,23 @@
                     <p>4.0 Star</p>
                     <p>New Delhi</p>
                 </div>
+                </div>
                 <!--mapview image div-->
-                <div id="mapview">
+                <div class="mapview">
                    <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" class="map">
-                   <p>MAP VIEW</p>
-
+                   MAP VIEW
                 </div>
             </div>
             <footer>
-                <a href="contact.html" target="_blank">Contact US</a><br>
-                <a href="https://www.facebook.com/" target="_blank"><img src="assests\images\facebook.png" class="img-fluid socialmedia"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="assests\images\instagram.png" class="img-fluid socialmedia"></a>
-                <a href="https://twitter.com/login?lang=en" target="_blank"><img src="assests\images\twitter.png" class="img-fluid socialmedia"></a><br>
+                <a href="contact.html" target="_blank">Contact US</a>
+                <div class="footertxt">
                 <span>© 2020 ROOM SEARCH PVT.LTD.</span>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="assests\images\facebook.png" class="img-fluid socialmedia"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="assests\images\instagram.png" class="img-fluid socialmedia"></a>
+                    <a href="https://twitter.com/login?lang=en" target="_blank"><img src="assests\images\twitter.png" class="img-fluid socialmedia"></a>
+                </div>
             </footer>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  

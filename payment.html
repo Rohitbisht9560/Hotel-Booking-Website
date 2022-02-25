@@ -13,49 +13,90 @@
     </head>
     <body>
         <div class="container-fluid">
-            <header>
-               <a href="index.html"><img src="assests\images\logo.png" height="100px" width="150px" alt="logo" class="logo img-fluid"></a>
-                <a href="login.html" target="_blank">Login</a>
-            </header>
-            <div class="akj">
-            <div class="innercontent">
-                <!--Div for image-->
-                <div>
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="img-fluid">
-                </div>
-                <h2>Radisson Blu Hotel</h2>
+          <header
+            class="Header-Div d-flex justify-content-between align-items-center"
+          >
+            <a href="index.html">
+              <img
+                class="logo-img"
+                src="assests/images/logo.png"
+                alt="logo"
+                width="200px"
+                height="150px"
+              />
+            </a>
+  
+            <a href="login.html" class="login-link">Login</a>
+          </header>
+          <div class="Content-Div d-flex">
+            <div class="hotel_description d-flex">
+              <div class="hotel-img-div">
+                <img
+                  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                  alt="Radisson Blu"
+                  class="hotel-big-img img-fluid"
+                />
+              </div>
+              <div class="hotel-description-content d-flex">
+                <h2>Radisson Blu</h2>
                 <p>#38 of 1,289 hotels in New Delhi</p>
-                <p>National Highway 8,New Delhi 110017 India</p>
+                <p>National Highway 8, New Delhi 110017 India</p>
+              </div>
             </div>
-            <div>
-                <p><b>Name:</b> John Doe</p>
-                <p><b>Number of Adults:</b> 2</p>
-                <p><b>Check-in Date:</b>06/06/2020</p>
-                <p><b>Check-in Date:</b>08/06/2020</p>
+            <div class="payment_details d-flex">
+              <div class="customer_details">
+                <p><strong>Name: </strong>John Doe</p>
+                <p><strong>Number of Adults: </strong>2</p>
+                <p><strong>Check In Date: </strong>17-02-2022</p>
+                <p><strong>Check Out Date: </strong>19-02-2022</p>
+              </div>
+              <div class="tariff">
+                <p>
+                  <strong>Tariff Breakdown: </strong>Rs. 1000 * 2 Adults * 5
+                  nights
+                </p>
+                <p><strong>Total Amount: </strong>Rs. 10000</p>
+              </div>
+              <a class="d-block pay-now" href="#">Pay now</a>
             </div>
-            <div class="tarrif">    
-                <p><b>Traiff Breakdown:</b>Rs.1000x 2 Adultsx 5 Nights</p>
-                <p><b>Total Amount:</b>Rs.10000</p>    
+          </div>
+  
+          <footer
+            class="Footer-Div d-flex align-items-center justify-content-between"
+          >
+            <a href="contact.html" class="contact-link">Contact Us</a>
+            <p id="copywright" class="my-0 align-self-end">
+              @2020 ROOM SEARCH PVT LTD.
+            </p>
+            <div class="social-media-imgs-div d-flex align-items-center">
+              <a href="https://www.facebook.com/" target="_blank">
+                <img
+                  class="social-media-imgs"
+                  src="assests/images/facebook.png"
+                  alt="Facebook"
+                />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img
+                  class="social-media-imgs"
+                  src="assests/images/instagram.png"
+                  alt="Facebook"
+                />
+              </a>
+              <a href="https://twitter.com/" target="_blank">
+                <img
+                  class="social-media-imgs"
+                  src="assests/images/twitter.png"
+                  alt="Facebook"
+                />
+              </a>
             </div>
-            <div>
-              <a href="#">Pay Now</a>
-            </div>
+          </footer>
         </div>
-            
-            <footer>
-                <div>
-                    <a href="contact.html" target="_blank">Contact US</a>
-                  </div>
-                  <div class="footertxt">
-                    <span>© 2020 ROOM SEARCH PVT.LTD.</span>
-                  </div>
-                    <div>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="assests\images\facebook.png" class="img-fluid socialmedia"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="assests\images\instagram.png" class="img-fluid socialmedia"></a>
-                    <a href="https://twitter.com/login?lang=en" target="_blank"><img src="assests\images\twitter.png" class="img-fluid socialmedia"></a>
-                    </div>  
-            </footer>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+      ></script>
     </body>
 </html>

@@ -12,39 +12,115 @@
         <link rel="stylesheet" href="styles\common.css">
     </head>
     <body>
-        <div class="container-fluid">
-            <header>
-                <img src="assests\images\logo.png" height="100px" width="150px" alt="logo" class="logo img-fluid">
-                <a class="login" href="login.html" target="_blank">Login</a>
+       
+          <div class="container-fluid px-0">
+            <header
+              class="Header-Div d-flex justify-content-between align-items-center"
+            >
+              <img
+                class="logo-img"
+                src="assests/images/logo.png"
+                alt="logo"
+                width="200px"
+                height="150px"
+              />
+    
+              <a href="login.html" class="login-link">Login</a>
             </header>
-            <div class="content">
-                <div class="searchbar">
-                <input type="text" id="city" placeholder="City"  name="city" autocomplete="off">
+            <div class="container-div d-flex">
+              <div
+                class="search-bar d-flex align-items-center justify-content-center">
+                <form class="search-city-form">
+                  <input type="text" placeholder="City" class="search" />
+                </form>
+              </div>
+              <div class="img-div d-flex">
+                <a href="list.html" class="d-inline-block img-container img-delhi">
+                  <div class="places-div">
+                    <img
+                      class="img-place img-fluid"
+                      src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
+                      alt="Delhi"
+                    />
+                    <div class="overlay">Delhi</div>
+                  </div>
+                </a>
+    
+                <div class="places-div">
+                  <a href="#" class="d-inline-block img-container">
+                    <img
+                      class="img-place img-fluid"
+                      src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"
+                      alt="Goa"
+                    />
+    
+                    <div class="overlay">Goa</div>
+                  </a>
                 </div>
-            <div class="imgcard" >
-                <a href="list.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class="img-fluid"></a>
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" class="img-fluid">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" class="img-fluid">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" class="img-fluid">
+    
+                <div class="places-div">
+                  <a href="#" class="d-inline-block img-container">
+                    <img
+                      class="img-place img-fluid"
+                      src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
+                      alt="Hyderabad"
+                    />
+    
+                    <div class="overlay">Hyderabad</div>
+                  </a>
+                </div>
+    
+                <div class="places-div">
+                  <a href="#" class="d-inline-block img-container">
+                    <img
+                      class="img-place img-fluid"
+                      src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
+                      alt="Culcutta"
+                    />
+    
+                    <div class="overlay">Calcutta</div>
+                  </a>
+                </div>
+              </div>
+              <div class="view-more-container">
+                <a href="index.html" class="viewmore">View more >></a>
+              </div>
             </div>
-            <div class="viewmore">
-                <a href="#">View more>>></a>
-            </div>
-            </div>
-            <footer>
-                <div>
-              <a href="contact.html" target="_blank">Contact US</a></div>
-              <div class="footertxt">
-                © 2020 ROOM SEARCH PVT.LTD.
-            </div>
-                <div>
-                <a href="https://www.facebook.com/" target="_blank"><img src="assests\images\facebook.png" class="img-fluid socialmedia"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="assests\images\instagram.png" class="img-fluid socialmedia"></a>
-                <a href="https://twitter.com/login?lang=en" target="_blank"><img src="assests\images\twitter.png" class="img-fluid socialmedia"></a>
-            </div>
-              
+            <footer
+              class="Footer-Div d-flex align-items-center justify-content-between"
+            >
+              <a href="contact.html" class="contact-link">Contact Us</a>
+              <p id="copywright" class="my-0">@2020 ROOM SEARCH PVT LTD.</p>
+              <div class="social-media-imgs-div d-flex align-items-center">
+                <a href="https://www.facebook.com/" target="_blank">
+                  <img
+                    class="social-media-imgs"
+                    src="assests/images/facebook.png"
+                    alt="Facebook"
+                  />
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <img
+                    class="social-media-imgs"
+                    src="assests/images/instagram.png"
+                    alt="Facebook"
+                  />
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                  <img
+                    class="social-media-imgs"
+                    src="assests/images/twitter.png"
+                    alt="Facebook"
+                  />
+                </a>
+              </div>
             </footer>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
-    </body>
+          </div>
+        
+      <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous"
+        ></script>
+      </body>
 </html>

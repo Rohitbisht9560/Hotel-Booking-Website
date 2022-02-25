@@ -1,23 +1,17 @@
-*
-{
-    margin: 0px;
-    padding: 0px;
-}
-.container-fluid
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    
-}
-
-.loader
-{
-    position: relative;
+.loader {
     width: 70px;
-    height: 70px;  
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     border-radius: 50%;
-    border: 12px solid #f3f3f3;
-    border-top:12px solid  #444444;
-}
+    border: 12px #f3f3f3 solid;
+    border-top: 12px #444 solid;
+    transform: translate(-50%, -50%);
+  }
+  
+  .loader-container {
+    height: 100vh;
+    position: relative;
+  }
+  

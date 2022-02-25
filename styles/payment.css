@@ -1,40 +1,51 @@
-.container
-{
-    margin: 0px;
-    padding: 0px;
-}
-.img-fluid.socialmedia
-{
- height: 20px;
- width: 20px;
-}
-.img-fluid
-{
-    height: 500px;
-    width: 500px;
-}
-
-.container-fluid
-{
-    margin: 0px;
-    padding: 0px;
-    position:relative;
-}
-.logo.img-fluid
-{
-    height:60px;
-    width:60px;
-}
-.innercontent{
-    width: 50%;
-    height: 20%;
-    background-color: rgb(132,136,139);
-    margin: 2% auto 2% auto;
-}
-.tarrif
-{
-    margin: 2%;
-    border: 1px black solid;
-    border-radius: 5px;
-    padding: 1% 2%;   
-}
+.hotel_description {
+    background-color: rgb(132, 136, 139);
+  
+    max-width: 70%;
+    max-height: 20%;
+    margin: 2% auto;
+  }
+  
+  .hotel-big-img {
+    width: 240px;
+    height: 216px;
+  }
+  
+  .pay-now {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
+  
+  .customer_details {
+    margin: 1% 0;
+  }
+  
+  .Content-Div {
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .hotel-description-content {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 3rem 0 2rem;
+  }
+  
+  .payment_details strong,
+  .tariff strong {
+    font-family: cursive;
+  }
+  
+  .payment_details {
+    border: 1px solid black;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #bc8f8f;
+  }
+  

@@ -13,93 +13,123 @@
     </head>
     <body>
         <div class="container-fluid">
-            <header>
-               <a href="index.html"><img src="assests\images\logo.png" height="100px" width="150px" alt="logo" class="logo img-fluid"></a>
-                <a href="login.html" target="_blank">Login</a>
-            </header>
-            <div class="content">
-                <div class="imgdiv">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="img-fluid">
-                </div>
-                <!--this form div-->
-                <div class="form">
-                    <form action="payment.html" method="get">
-                        <div class="row mb-2 align-items-center" >
-                            <div class="col-auto" >
-                              <label for="inputadult" class="col-form-label">Adults:</label>
-                            </div>
-                            <div class="col-auto">
-                              <input type="number" min="1" id="inputadult" class="form-control" value="1" name="adult" >
-                            </div>
-                            
-                        </div>
-                        <div class="row mb-2 align-items-center" >
-                            <div class="col-auto" >
-                              <label for="inputname" class="col-form-label">Name:</label>
-                            </div>
-                            <div class="col-auto">
-                              <input type="text" id="inputname" class="form-control" required placeholder="Enter your name" name="name" autocomplete="off">
-                            </div>
-                        </div>
-                        <div class="row mb-2 align-items-center" >
-                            <div class="col-auto" >
-                              <label for="inputdate" class="col-form-label">From Date:</label>
-                            </div>
-                            <div class="col-auto">
-                              <input type="date" id="inputdate" class="form-control" required name="fromdate">
-                            </div>
-                        </div>
-                        <div class="row mb-2 align-items-center" >
-                            <div class="col-auto" >
-                              <label for="inputtodate" class="col-form-label">To Date:</label>
-                            </div>
-                            <div class="col-auto">
-                              <input type="date" id="inputtodate" class="form-control" required name="todate">
-                            </div>
-                        </div>
-                        <div class="row mb-2 align-items-center" >
-                            <div class="col-auto" >
-                              <label for="inputtotal" class="col-form-label">Total</label>
-                            </div>
-                            <div class="col-auto">
-                              <input type="text" id="inputtotal" class="form-control" readonly name="price">
-                            </div> 
-                        </div>
-                        <button type="submit" class="btn btn-secondary">Book Now</button>
-                    </form>
-                </div>
-
-            <div class="description">
-                <h2>Radisson Blu Hotel</h2>
-                <p>RATING</p>
-                <p>5 Star</p>
-                <p>AMENITIES</p>
-                <ul>
-                   <li>Room Service</li>
-                   <li>Resturant</li>
-                   <li>Business Center</li>
-                   <li>Fitness Center</li>
-                   <li>Pool</li>
-                </ul>
-                <h6>DESCRIPTION</h6>
-                <p>Hi Welcome to the hotel website</p>
-            </div>
-            </div>
-            
-            <footer>
-              <div>
-                <a href="contact.html" target="_blank">Contact US</a>
+          <header
+            class="Header-Div d-flex justify-content-between align-items-center"
+          >
+            <a href="index.html">
+              <img
+                class="logo-img"
+                src="assests/images/logo.png"
+                alt="logo"
+                width="200px"
+                height="150px"
+              />
+            </a>
+  
+            <a href="login.html" class="login-link">Login</a>
+          </header>
+          <div class="Content-Div">
+            <div class="hotel-booking d-flex">
+              <div class="hotel-img-div d-flex">
+                <img
+                  class="hotel-big-img img-fluid"
+                  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                  alt="RadissonBlu"/>
               </div>
-              <div class="footertxt">
-                <span>© 2020 ROOM SEARCH PVT.LTD.</span>
+              <div class="payment-form d-flex justify-items-center">
+                <form action="payment.html" class="my-2 booking-form">
+                  
+                  <label for="Adults">Adults:</label>
+                  <input
+                    type="number"
+                    id="Adults"
+                    name="Adults"
+                    min="1"
+                    oninvalid="this.setCustomValidity('value must be greater than or equal to 1')"
+                    oninput="setCustomValidity('')"
+                    step="1"
+                    required
+                  />
+                  <label for="cust_name">Name:</label>
+                  <input
+                    type="text"
+                    id="cust_name"
+                    name="cust_name"
+                    autocomplete="no"
+                    required
+                  />
+                  <label for="from_date">From Date:</label>
+                  <input type="date" id="from_date" name="from_date" required />
+                  <label for="to_date">To Date:</label>
+                  <input type="date" id="to_date" name="to_date" required />
+                  <label for="total">Total:</label>
+                  <input type="text" id="total" name="total" disabled required />
+  
+                  <input type="submit" value="Book now" class="submit" />
+                
+                </form>
               </div>
-                <div>
-                <a href="https://www.facebook.com/" target="_blank"><img src="assests\images\facebook.png" class="img-fluid socialmedia"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="assests\images\instagram.png" class="img-fluid socialmedia"></a>
-                <a href="https://twitter.com/login?lang=en" target="_blank"><img src="assests\images\twitter.png" class="img-fluid socialmedia"></a>
-                </div> 
-            </footer>
+            </div>
+  
+            <div class="hotel-description">
+              <h2>Radisson Blu Hotel</h2>
+  
+              <h6>RATING</h6>
+              <p>5 star</p>
+              <h6>AMENITIES</h6>
+  
+              <ul>
+                <li>Room Service</li>
+                <li>Restaurant</li>
+                <li>Business Center</li>
+                <li>Fitness Center</li>
+                <li>Pool</li>
+              </ul>
+  
+              <h6>DESCRIPTION</h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                dolore quis, ut mollitia sed incidunt, dolorum eius ducimus
+                numquam soluta voluptas magnam hic sapiente culpa, quasi
+                perferendis! Expedita, animi suscipit.
+              </p>
+            </div>
+          </div>
+          <footer
+            class="Footer-Div d-flex align-items-center justify-content-between"
+          >
+            <a href="contact.html" class="contact-link">Contact Us</a>
+            <p id="copywright" class="my-0">@2020 ROOM SEARCH PVT LTD.</p>
+            <div class="social-media-imgs-div d-flex align-items-center">
+              <a href="https://www.facebook.com/" target="_blank">
+                <img
+                  class="social-media-imgs"
+                  src="assests/images/facebook.png"
+                  alt="Facebook"
+                />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img
+                  class="social-media-imgs"
+                  src="assests/images/instagram.png"
+                  alt="Facebook"
+                />
+              </a>
+              <a href="https://twitter.com/" target="_blank">
+                <img
+                  class="social-media-imgs"
+                  src="assests/images/twitter.png"
+                  alt="Facebook"
+                />
+              </a>
+            </div>
+          </footer>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
+      
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+      ></script>
     </body>
 </html>

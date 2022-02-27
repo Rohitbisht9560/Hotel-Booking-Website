@@ -55,12 +55,8 @@ body {
   }
   
   .viewmore {
-    display: inline-block;
     margin-left: 50%;
     transform: translateX(-50%);
-    text-decoration: none;
-    color: black;
-    padding: 2rem 0;
   }
   
   .places-div {

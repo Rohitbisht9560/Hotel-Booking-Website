@@ -44,9 +44,7 @@
     color: black;
   }
   
-  #map-view {
-    display: none;
-  }
+  
   
   #list-view {
     display: grid;
@@ -54,10 +52,15 @@
     justify-items: center;
     grid-row-gap: 1rem;
     margin-bottom: 6rem;
+    
   }
   
   .description {
     padding-left: 1rem;
     padding-top: 1rem;
+  }
+  .hotel-div:hover
+  {
+    background-color:rosybrown;
   }
   

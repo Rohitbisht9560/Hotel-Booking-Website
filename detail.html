@@ -26,7 +26,9 @@
               />
             </a>
   
-            <a href="login.html" class="login-link">Login</a>
+            <button type="button" class="btn btn-light btn-sm login-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Login
+            </button>
           </header>
           <div class="Content-Div">
             <div class="hotel-booking d-flex">
@@ -64,8 +66,7 @@
                   <input type="date" id="to_date" name="to_date" required />
                   <label for="total">Total:</label>
                   <input type="text" id="total" name="total" disabled required />
-  
-                  <input type="submit" value="Book now" class="submit" />
+                  <button type="submit" class="btn btn-success submit">Book Now</button>
                 
                 </form>
               </div>
@@ -98,7 +99,9 @@
           <footer
             class="Footer-Div d-flex align-items-center justify-content-between"
           >
-            <a href="contact.html" class="contact-link">Contact Us</a>
+          <button type="button" class="btn btn-info btn-sm contact-link" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            Contact Us
+          </button>
             <p id="copywright" class="my-0">@2020 ROOM SEARCH PVT LTD.</p>
             <div class="social-media-imgs-div d-flex align-items-center">
               <a href="https://www.facebook.com/" target="_blank">
@@ -124,6 +127,71 @@
               </a>
             </div>
           </footer>
+                 <!-----modal for login button------->
+                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="row justify-content-center mb-2">
+                            <div class="col-3">
+                              <label for="inputemail" class="col-form-label">Email</label>
+                            </div>
+                            <div class="col-8">
+                              <input type="email" id="inputemail" class="form-control" aria-describedby="emailHelpInline" placeholder="Enter email" required>
+                            </div>
+                          </div>                      
+                          <div class="row justify-content-center">
+                            <div class="col-3">
+                              <label for="inputPassword6" class="col-form-label">Password</label>
+                            </div>
+                            <div class="col-8">
+                              <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" placeholder="Enter password" required>
+                            </div>
+                          </div>
+                          
+                        </form> 
+                      </div>
+                      <div class="modal-footer justify-content-center">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-----modal for contact button------->
+              <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Get in Touch</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Thank you for reaching out!!!</p>
+                      <p>Please enter you email and we will get back to you</p>
+                      <form>
+                        <div class="row">
+                          <div class="col-auto">
+                            <label for="inputemail" class="col-form-label">Email:</label>
+                          </div>
+                          <div class="col-auto">
+                            <input type="email" id="inputemail" class="form-control" aria-describedby="emailHelpInline" placeholder="Enter email" required>
+                          </div>
+                        </div>
+                      </form> 
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       
       <script

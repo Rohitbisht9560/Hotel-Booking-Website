@@ -10,10 +10,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles\index.css">
         <link rel="stylesheet" href="styles\common.css">
+        <script type="text/javascript" src="scripts\index.js"></script>  
     </head>
     <body>
        
-          <div class="container-fluid px-0">
+          <div class="container-fluid px-0 yoyo" >
             <header
               class="Header-Div d-flex justify-content-between align-items-center">
               <img
@@ -82,10 +83,56 @@
                   </a>
                 </div>
               </div>
-              <div class="view-more-container">
-                <a href="index.html">
-                  <button type="button" class="btn btn-secondary viewmore">View More</button>
+              <div id="imgdiv2" class="img-div2">
+                <a href="list.html" class="d-inline-block img-container img-delhi">
+                  <div class="places-div">
+                    <img
+                      class="img-place img-fluid"
+                      src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg"
+                      alt="Chennai"
+                    />
+                    <div class="overlay">Chennai</div>
+                  </div>
                 </a>
+    
+                <div class="places-div">
+                  <a href="#" class="d-inline-block img-container">
+                    <img
+                      class="img-place img-fluid"
+                      src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg"
+                      alt="Agra"
+                    />
+    
+                    <div class="overlay">Agra</div>
+                  </a>
+                </div>
+    
+                <div class="places-div">
+                  <a href="#" class="d-inline-block img-container">
+                    <img
+                      class="img-place img-fluid"
+                      src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg"
+                      alt="Jaipur"
+                    />
+    
+                    <div class="overlay">Jaipur</div>
+                  </a>
+                </div>
+    
+                <div class="places-div">
+                  <a href="#" class="d-inline-block img-container">
+                    <img
+                      class="img-place img-fluid"
+                      src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg"
+                      alt="Bangluru"
+                    />
+    
+                    <div class="overlay">Bangluru</div>
+                  </a>
+                </div>
+              </div>
+              <div class="view-more-container">
+                  <button type="button" id="vm" class="btn btn-secondary viewmore" onclick="myfun()">View More</button>
               </div>
             </div>
             <footer

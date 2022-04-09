@@ -36,7 +36,8 @@
   }
   
   .hotel-img-div {
-    height: 400px;
+    /* height: 25rem; */
+    height: fit-content;
     min-width: 65%;
     justify-content: center;
     align-items: center;
@@ -44,10 +45,9 @@
   }
   
   .hotel-big-img {
-    max-height: 350px;
-  
-    /* margin-top: 1rem; */
+    max-height: 21.875;
   }
+  
   
   .booking-form {
     display: grid;
